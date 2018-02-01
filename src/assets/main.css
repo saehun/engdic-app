@@ -1,0 +1,18 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/spoqa-han-sans/2.1.1/css/SpoqaHanSans-kr.min.css');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Spoqa Han Sans', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+input {
+    font-family: 'Spoqa Han Sans', Helvetica, Arial, sans-serif;
+}
+
+div {
+    box-sizing: border-box;
+}
