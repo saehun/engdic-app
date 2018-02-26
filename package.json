@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "axios": "^0.17.1",
+    "lodash": "^4.17.5",
+    "pretty": "^2.0.0",
     "vue": "^2.5.11"
   },
   "browserslist": [

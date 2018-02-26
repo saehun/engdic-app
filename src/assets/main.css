@@ -16,3 +16,198 @@ input {
 div {
     box-sizing: border-box;
 }
+
+
+body {
+    background: #36D1DC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5B86E5, #36D1DC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+
+
+.print-page {
+    margin: 0;
+    padding: 0;
+    font-family: 'Spoqa Han Sans', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+
+
+.print-wrapper {
+    max-width: 700px;
+    margin: 0px auto;
+}
+
+.prob {
+    background: white;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+ul.answers {
+    padding: 0px;
+}
+
+ul.answers li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+}
+
+ul.left {
+    float: left;
+}
+
+ul.right {
+    float: right;
+}
+
+div.type-5 li,
+div.type-4 li {
+    margin-top: 10px;
+}
+
+ul.left li {
+    text-align: right;
+}
+
+ul li {
+    list-style: none;
+}
+
+.prob.type-5:after,
+.prob.type-4:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.type-answer span {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+h3 {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 599px) {
+    html,
+    body {
+        font-size: 12px;
+    }
+
+    .prob {
+        margin: 20px 10px 20px 10px;
+    }
+
+    .type-5,
+    .type-4 {
+        font-size: 12px;
+    }
+
+    h3 {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+@media screen {
+    .print-close {
+        display: block;
+    }
+}
+
+
+@page {
+    size: A4;
+    margin: 10mm;
+}
+
+
+@media print {
+    html,
+    body {
+        width: 210mm;
+        height: 297mm;
+        font-size: 8pt;
+        color: black;
+    }
+
+    .wrapper {
+        margin-top: 0;
+    }
+
+    .print-close {
+        display: none!important;
+    }
+
+    /*.prob:nth-child(odd) {*/
+    /*}*/
+    /*.prob:nth-child(even) {*/
+    /*    float: right;*/
+    /*}*/
+    .prob {
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        border: 1pt solid #CCC;
+        width: 85mm;
+        padding: 5mm;
+        margin-top: 5mm;
+        margin-left: 5mm;
+    }
+
+    .prob.type-4 {
+        width: 170mm!important;
+    }
+
+    .prob.type-5 {
+        width: 170mm!important;
+    }
+
+
+    /*div.type-3, div.type-4, div.type-5{*/
+    /*    display:block;*/
+    /*    margin: 5mm 50mm 0 50mm;*/
+    /*    float: none;*/
+    /*}*/
+    /*div.type-3:before, div.type-4:before, div.type-5:before{*/
+    /*    display:table;*/
+    /*    content: "";*/
+    /*    clear:both;*/
+    /*}*/
+    /*div.type-3:after, div.type-4:after, div.type-5:after{*/
+    /*    display:table;*/
+    /*    content: "";*/
+    /*    clear:both;*/
+    /*}*/
+    ul.answers li {
+        display: inline-block;
+        list-style: none;
+        margin-right: 5mm;
+    }
+
+    h3 {
+        display: block;
+        margin: 0;
+        padding: 0;
+
+    }
+
+}
